@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[
+            [1,2,3,4],
+            [34,56,33,55],
+            [23,45,67,89],
+            [23,34,56,46],
+        ]
+        let tong=0;
+        for (let i= 0; i< arr.length; i++) {
+            for (let j= 0; j< arr[i].length; j++) {
+                if(i==j) {
+                    tong+=arr[i][j];
+                }
+            }
+        }
+        document.write(tong);
+    </script>
+</body>
+</html>
