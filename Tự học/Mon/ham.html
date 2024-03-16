@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n= +prompt('Nhập số lượng n phần tử');
+        let arr[];
+        for (let i= 0; i< n; i++) {
+            let x= +prompt("Nhập vào phần tử thứ"+i);
+            arr.push(x);
+        }
+        for (let j= 0; j < arr.length; j++) {
+            document.write("Các phần tử là"+ arr[j]+"<br>");
+        }
+        document.write(arr);
+    </script>
+</body>
+</html>
