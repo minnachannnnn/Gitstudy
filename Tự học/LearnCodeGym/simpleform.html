@@ -3,30 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Order Form</title>
+    <style>
+        form {
+            background-color:azure;
+            width:50%;
+        }
+    </style>
 </head>
 <body>
     <form method="get" action="simpleform.html">
         <h2>Order Form</h2> <br>
         <p>What would you like to buy?</p>
         <select name="" id="">
+            <option value="" disable selected>--Select one product--</option>
             <option value="">A</option>
             <option value="">B</option>
             <option value="">C</option>
         </select>
         <p>How many would you like to order?</p>
-        <input type="radio" name="" id="min"> 1-$10
-        <input type="radio" name="" id="min"> 2-$20
-        <input type="radio" name="" id="min"> 3-$25
+        <table>
+            <tr>
+                <td><input type="radio" name="" id="min"></td>
+                <td>1-$10</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="" id="min"></td>
+                <td>2-$20</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="" id="min"></td>
+                <td>3-$25</td>
+            </tr>
+        </table>
         <p>Name <span style="color: red;">*</span></p>
         <input type="text" placeholder="FirstName">
         <input type="text" placeholder="LastName">
         <p>Email</p>
         <input type="text" size="30px">
         <p>Phone Number</p>
-        <input type="text"> -
-        <input type="text"> -
-        <input type="text">;
+        <table>
+            <tr>
+                <td><input style="width: 40px" type="text"></td>
+                <td>-</td>
+                <td><input style="width: 40px" type="text"></td>
+                <td>-</td>
+                <td><input style="width: 40px" type="text"></td>
+            </tr>
+        </table>
+        <br>
+        <br>
         <button type="submit">Submit</button>
     </form>
 </body>
