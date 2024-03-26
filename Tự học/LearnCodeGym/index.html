@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 400px;
+            position: absolute;
+            top: 100px;
+            left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://static-images.vnncdn.net/files/publish/2023/10/17/moon-chae-won-268.jpg" alt="" id="x">
+    <button onclick="phai">Sang phai</button>
+    <script>
+        function phai(){
+            let xx = document.getElementById("x");
+            xx.style.left= parseInt(xx.style.left) + 20+ "px";
+            alert(xx.style.left);
+        }
+    </script>
+</body>
+</html>
