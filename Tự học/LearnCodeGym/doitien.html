@@ -3,38 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chuyển đổi tiền tệ</title>
 </head>
 <body>
-    <table>
-        <tr>
-            <td>Amount</td>
-            <td>From currency</td>
-            <td>To currency</td>
-        </tr>
-        <tr>
-            <td><Input type="text"></Input></td>
-            <td><select name="" id="">
-                <option value="" disable selected>--Select one--</option>
-                <option value="">Vietnam VND</option>
-                <option value="">Korean Won</option>
-                <option value="">China RMB</option>
-                <option value="">USA</option>
-            </select></td>
-            <td><select name="" id="">
-                <option value="" disable selected>--Select one--</option>
-                <option value="">Vietnam VND</option>
-                <option value="">Korean Won</option>
-                <option value="">China RMB</option>
-                <option value="">USA</option>
-            </select></td>
-            <td><button style="button" onclick="convert()">Convert</button></td>
-        </tr>
-    </table>
-    <script>
-        function convert(){
-            
-        }
-    </script>
+<input type="text" id="tien" />
+<select id="from">
+    <option value="1">Việt Nam</option>
+    <option value="24000">Mỹ</option>
+    <option value="19">Hàn</option>
+    <option value="300">Trung Quốc</option>
+</select>
+<select id="to">
+    <option value="1">Việt Nam</option>
+    <option value="24000">Mỹ</option>
+    <option value="19">Hàn</option>
+    <option value="300">Trung Quốc</option>
+</select>
+<button onclick="chuyen()">Đổi</button>
+<h1 id="kq"></h1>
+<script>
+    function chuyen() {
+        let t = document.getElementById("tien").value;
+        let from = document.getElementById("from").value;
+        let to = document.getElementById("to").value;
+        let kq = (t * from) / to;
+        document.getElementById("kq").innerHTML = "Kết quả là: " + kq;
+    }
+</script>
 </body>
 </html>
